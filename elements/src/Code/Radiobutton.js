@@ -1,9 +1,10 @@
 import React from 'react';
 import '../Prism.css';
+import PrismCode from 'react-prism';
 
 const RadiobuttonCode = () => (
   <div className="prism-code">
-    <pre className="line-numbers"><code className="language-JavaScript">
+    <PrismCode component="pre" className="line-numbers language-javascript">
       {`class Radio extends React.Component {
         state = {
           option: 'option1'
@@ -60,7 +61,7 @@ const RadiobuttonCode = () => (
       }
 
       export default Radio;`}
-    </code></pre>
+    </PrismCode>
   </div>
 )
 

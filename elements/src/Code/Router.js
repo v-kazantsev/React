@@ -1,9 +1,10 @@
 import React from 'react';
 import '../Prism.css';
+import PrismCode from 'react-prism';
 
 const RouterCode = () => (
   <div className="prism-code">
-    <pre className="line-numbers"><code className="language-JavaScript">
+    <PrismCode component="pre" className="language-javascript">
       {`class App extends Component {
         render() {
           return (
@@ -28,7 +29,7 @@ const RouterCode = () => (
       }
 
       export default App;`}
-    </code></pre>
+    </PrismCode>
   </div>
 )
 export default RouterCode;

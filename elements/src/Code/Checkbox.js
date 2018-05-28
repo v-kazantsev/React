@@ -1,9 +1,10 @@
 import React from 'react';
 import '../Prism.css';
+import PrismCode from 'react-prism';
 
 const CheckboxCode = () => (
   <div className="prism-code">
-    <pre className="line-numbers"><code className="language-JavaScript">
+    <PrismCode component="pre" className="line-numbers language-javascript">
       {`class Checkboxes extends React.Component {
         state = {
           options: [
@@ -43,7 +44,7 @@ const CheckboxCode = () => (
 
       export default Checkboxes;
 `}
-    </code></pre>
+</PrismCode>
   </div>
 )
 

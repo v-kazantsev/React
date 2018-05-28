@@ -1,9 +1,10 @@
 import React from 'react';
 import '../Prism.css';
+import PrismCode from 'react-prism';
 
 const DropdownCode = () => (
   <div className="prism-code">
-    <pre className="line-numbers"><code className="language-JavaScript">
+    <PrismCode component="pre" className="line-numbers language-javascript">
       {`import React from 'react'
 
       class Drop extends React.Component {
@@ -39,9 +40,8 @@ const DropdownCode = () => (
         }
       }
 
-      export default Drop;
-`}
-    </code></pre>
+      export default Drop;`}
+    </PrismCode>
   </div>
 )
 

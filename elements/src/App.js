@@ -9,6 +9,8 @@ import Radio from './components/Radio';
 import Drop from './components/Drop';
 import Checkboxes from './components/Checkboxes';
 import Form from './components/Form';
+import './Prism.css';
+import 'prismjs';
 
 class App extends Component {
   render() {

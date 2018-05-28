@@ -1,9 +1,10 @@
 import React from 'react';
 import '../Prism.css';
+import PrismCode from 'react-prism';
 
 const FormCode = () => (
   <div className="prism-code">
-    <pre className="line-numbers"><code className="language-JavaScript">
+    <PrismCode component="pre" className="line-numbers language-javascript">
       {`class Form extends React.Component {
         state = {
           isMatch: true,
@@ -54,7 +55,7 @@ const FormCode = () => (
                 <br/>
                 <div>
                   <button className="button">Submit</button>
-                  <span className="warning">{ !this.state.isMatch && 'Strings don\'t match!'}</span>
+                  <span className="warning">{ !this.state.isMatch && 'Strings don\\'t match!'}</span>
                 </div>
               </form>
               <div>
@@ -67,7 +68,7 @@ const FormCode = () => (
         }
       }
       export default Form;`}
-    </code></pre>
+    </PrismCode>
   </div>
 )
 

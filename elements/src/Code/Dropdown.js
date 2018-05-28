@@ -1,9 +1,11 @@
 import React from 'react';
 import '../Prism.css';
+import 'prismjs';
+import { Code } from 'watson-react-components';
 
 const DropdownCode = () => (
   <div className="prism-code">
-    <pre className="line-numbers"><code className="language-JavaScript">
+    <Code language="javascript" lineNumbers>
       {`import React from 'react'
 
       class Drop extends React.Component {
@@ -41,7 +43,7 @@ const DropdownCode = () => (
 
       export default Drop;
 `}
-    </code></pre>
+</Code>
   </div>
 )
 
